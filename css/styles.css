@@ -71,7 +71,7 @@ h4 a {
 a:hover {
     font-size: 1.3em;
     font-weight: 300;
-    transition: font-size .5s;
+    transition: font-size 1s;
 }
 
             /* ===========================   Main    ============================= */
@@ -87,6 +87,11 @@ main h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2em;
     margin-bottom: 25px;
+}
+
+main h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.70em;
 }
 
 main h5 {
@@ -203,4 +208,35 @@ p span:not(:first-child) {
 
 #horror-font-image {
     width: 90%;
+}
+
+/* ========================================= AC Maintenance ==================================== */
+
+#filter-change {
+    border-radius: 10px;
+    width: 70%;
+}
+
+
+
+
+/* =========================================== MEDIA QUERIES ================================================= */
+
+@media (min-width: 768px){
+
+    .flex-container {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50px;
+    }
+
+    nav li {
+        margin: 0;
+        padding: 10px 10px;
+    }
+
+
+
+
+
 }

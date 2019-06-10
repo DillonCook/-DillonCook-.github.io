@@ -1,0 +1,206 @@
+/* ================== Base Styles and Header and Footer =========================== */
+
+
+body {
+    text-align: center;
+    background-color: rgb(255, 254, 253);
+}
+
+         /* =======================    Header    =========================== */
+
+header {
+    margin: 0;
+    padding: 0;
+}
+#header-logo {
+    width: 100%;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav h4 {
+    margin: 10px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+nav li {
+    list-style-type: none;
+    background-color: rgb(21, 121, 187);
+    border: 1px solid rgb(194, 194, 194);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: 5px 5px;
+    border-radius: 5px;
+    padding: 8px;
+
+}
+
+nav li:hover {
+    border-bottom: 3px solid rgb(170, 53, 23);
+
+}
+
+nav a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+}
+
+h4 a {
+    color: rgb(21, 121, 187);
+    padding: 8px 25px 8px 5px;
+}
+
+a:hover {
+    font-size: 1.3em;
+    font-weight: 300;
+    transition: font-size .5s;
+}
+
+            /* ===========================   Main    ============================= */
+
+main {
+    width: 90%;
+    margin: 50px auto 50px;
+}
+
+
+
+main h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+main h5 {
+    font-size: 1.5em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 20px;
+    color: rgb(21, 121, 187);
+}
+
+main p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: start;
+    font-size: 1em;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+span {
+    color:  rgb(21, 121, 187);
+    font-size: 1em;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+main ul {
+    margin-left: -20px;
+    margin-bottom: 50px;
+}
+
+main li {
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: decimal;
+    margin: auto;
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: start;
+    background-color: rgb(252, 248, 245);
+    border-radius: 7px;
+    border: 1px solid rgb(75, 150, 212);
+    box-shadow: 0 1px 10px -2px black;
+    padding: 10px;
+}
+
+main li:hover {
+    box-shadow: 0 3px 10px 0px rgb(30, 95, 180);
+    transition: box-shadow .5s;
+}
+
+                /* ======================= Footer ======================= */
+
+footer {
+    padding: 30px 0 0;
+    margin: 0;
+    background-color: #054A76;
+}
+
+footer h4 {
+    font-size: 2em;
+    font-weight: normal;
+    color: rgb(212, 212, 212);
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 25px;
+}
+
+footer h5 {
+    color: rgb(212, 212, 212);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 45px;
+    font-size: 1.5em;
+}
+
+footer p {
+    width: 70%;
+    margin: 15px auto;
+    color: rgb(207, 218, 228);
+    font-size: .9em;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+#width {
+    width: 55%;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(83, 177, 240);
+    font-weight: normal;
+    padding: 5px;
+}
+
+
+#copyright {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(187, 187, 187);
+    width: 100%;
+    color: rgb(25, 36, 51);
+    border-top: 1px solid #fff;
+}
+
+
+/* ========================================== AC Repair =================================================== */
+
+p span:not(:first-child) {
+    margin: 0;
+}
+
+#horror-font-image {
+    width: 90%;
+}

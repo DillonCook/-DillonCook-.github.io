@@ -17,7 +17,7 @@ header {
 }
 
 nav {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -37,24 +37,22 @@ nav ul {
 .flex-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 150px;
 }
 
 nav li {
     list-style-type: none;
     background-color: rgb(21, 121, 187);
-    border: 1px solid rgb(194, 194, 194);
+    border: 1px solid rgb(0, 0, 0);
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    margin: 5px 5px;
+    margin: 2px 0;
     border-radius: 5px;
     padding: 8px;
 
 }
 
 nav li:hover {
-    border-bottom: 3px solid rgb(170, 53, 23);
+    border-bottom: 3px solid rgb(216, 66, 29);
 
 }
 
@@ -73,6 +71,7 @@ a:hover {
     font-weight: 300;
     transition: font-size 1s;
 }
+
 
             /* ===========================   Main    ============================= */
 
@@ -128,10 +127,11 @@ main li {
     font-size: 1em;
     margin-bottom: 15px;
     text-align: start;
-    background-color: rgb(252, 248, 245);
+    background-color: rgb(243, 243, 243);
+    color: #054A76;
     border-radius: 7px;
     border: 1px solid rgb(75, 150, 212);
-    box-shadow: 0 1px 10px -2px black;
+    box-shadow: 0 1px 7px -1px black;
     padding: 10px;
 }
 
@@ -200,7 +200,7 @@ footer a {
 }
 
 
-/* ========================================== AC Repair =================================================== */
+/* ========================================== AC Repair Page =================================================== */
 
 p span:not(:first-child) {
     margin: 0;
@@ -210,11 +210,13 @@ p span:not(:first-child) {
     width: 90%;
 }
 
-/* ========================================= AC Maintenance ==================================== */
+/* ========================================= AC Maintenance Page ==================================== */
 
 #filter-change {
     border-radius: 10px;
-    width: 70%;
+    width: 50%;
+    float: right;
+    margin: 0 0 10px 10px;
 }
 
 
@@ -223,19 +225,32 @@ p span:not(:first-child) {
 /* =========================================== MEDIA QUERIES ================================================= */
 
 @media (min-width: 768px){
+    nav {
+        width: 100%;
+        margin: 0 auto;
+    }
 
     .flex-container {
         flex-direction: row;
         justify-content: space-around;
         height: 50px;
+        background-color: rgb(21, 121, 187);
+        align-items: center;
+        border-top: 2px solid #054A76;
+        border-bottom: 2px solid #054A76;
     }
 
     nav li {
         margin: 0;
         padding: 10px 10px;
+        flex: 0 25%;
+        border: none;
     }
 
-
+    main {
+        width: 85%;
+        max-width: 850px;
+    }
 
 
 

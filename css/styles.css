@@ -57,7 +57,7 @@ nav li {
 
 nav li:hover {
     border-bottom: 3px solid rgb(216, 66, 29);
-
+    transition: border-bottom .5s;
 }
 
 nav a {
@@ -74,6 +74,11 @@ a:hover {
     font-size: 1.3em;
     font-weight: 300;
     transition: font-size 1s;
+}
+
+nav .current {
+    border-bottom: 3px solid rgb(216, 66, 29);
+
 }
 
 
@@ -99,6 +104,7 @@ main h3 {
 
 main h5 {
     font-size: 1.5em;
+    line-height: 1.5;
     font-family: 'Open Sans Condensed', sans-serif;
     margin-bottom: 20px;
     color: rgb(21, 121, 187);
@@ -144,9 +150,20 @@ main li:hover {
     transition: box-shadow .5s;
 }
 
-#financing-verse {
+#no-margin-top {
     margin-top: 0;
 }
+
+#map-screenshot {
+    width: 60%;
+    border-radius: 8px;
+}
+
+#map-screenshot:hover {
+    width: 100%;
+    transition: width .5s;
+}
+
 
                 /* ======================= Footer ======================= */
 
@@ -241,6 +258,7 @@ p span:not(:first-child) {
         display: block;
         width: 100%;
         object-fit: contain;
+        box-shadow:  0 0 20px -1px #FCFEFF;
     }
 
     nav {
@@ -249,6 +267,7 @@ p span:not(:first-child) {
     }
 
     .flex-container {
+        padding: 8px 0;
         flex-direction: row;
         justify-content: space-around;
         height: 50px;
@@ -259,16 +278,57 @@ p span:not(:first-child) {
     }
 
     nav li {
+        background-color: rgba(0, 0, 0, 0);
         margin: 0;
         padding: 10px 10px;
         flex: 0 25%;
         border: none;
+        font-size: 1.1em;
     }
 
     main {
-        width: 85%;
+        width: 75%;
         max-width: 850px;
     }
+}
+
+@media (min-width: 1024px) {
+    main{
+        width: 70%;
+        max-width: 1000px;
+    }
+    
+    main ul {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    /* .main-flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main div {
+        width: 500px;
+        flex: 50%;
+    } */
+    
+    
+    #header-logo-2 {
+        width: 60%;
+        max-width: 650px;
+        margin: auto;
+        box-shadow:  0 12px 20px 0px #FCFEFF;
+    }
+
+
+
+
+
+
+
 
 
 

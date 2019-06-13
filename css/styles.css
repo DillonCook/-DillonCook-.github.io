@@ -45,10 +45,10 @@ nav ul {
 
 nav li {
     list-style-type: none;
-    background-color: rgb(21, 121, 187);
-    border: 1px solid rgb(0, 0, 0);
+    background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjMwOTczfQ&auto=format&fit=crop&w=715&q=80);
+    border: 3px solid rgba(51, 141, 201, 0.822);    
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 2px 0;
     border-radius: 5px;
     padding: 10px;
@@ -61,8 +61,8 @@ nav li:hover {
 }
 
 nav a {
-     text-decoration: none;
-     color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 h4 a {
@@ -78,7 +78,7 @@ a:hover {
 
 nav .current {
     border-bottom: 3px solid rgb(216, 66, 29);
-
+    color: white;
 }
 
 
@@ -87,9 +87,30 @@ nav .current {
 main {
     width: 90%;
     margin: 50px auto 50px;
+    background-color: rgba(240, 240, 240, 0.712);
+    border-radius: 9px;
+    border-left: 1px solid rgba(128, 128, 128, 0.486);
+    border-right: 1px solid rgba(128, 128, 128, 0.486);
+    padding: 1px 0;
 }
 
+main div {
+    width: 95%;
+    margin: auto;
+}
 
+.mike-reaka-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.mike-reaka-image2 {
+    display: none;
+}
+
+.home {
+    font-size: 3em;
+}
 
 main h2 {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -126,8 +147,7 @@ span {
 }
 
 main ul {
-    margin-left: -20px;
-    margin-bottom: 50px;
+    padding-right: 40px;
 }
 
 main li {
@@ -267,14 +287,16 @@ p span:not(:first-child) {
     }
 
     .flex-container {
+        background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjMwOTczfQ&auto=format&fit=crop&w=715&q=80);
+        background-size: cover;
         padding: 8px 0;
         flex-direction: row;
         justify-content: space-around;
         height: 50px;
         background-color: rgb(21, 121, 187);
         align-items: center;
-        border-top: 2px solid #054A76;
-        border-bottom: 2px solid #054A76;
+        border-top: 2px solid rgba(51, 141, 201, 0.822);
+        border-bottom: 2px solid rgba(51, 141, 201, 0.822);
     }
 
     nav li {
@@ -284,6 +306,17 @@ p span:not(:first-child) {
         flex: 0 25%;
         border: none;
         font-size: 1.1em;
+        background-image: none;
+    }
+
+    .mike-reaka-image {
+        display: none;
+    }
+
+    .mike-reaka-image2 {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
     }
 
     main {
@@ -292,9 +325,10 @@ p span:not(:first-child) {
     }
 }
 
+
 @media (min-width: 1024px) {
     main{
-        width: 70%;
+        width: 75%;
         max-width: 1000px;
     }
     
@@ -303,17 +337,15 @@ p span:not(:first-child) {
         margin: auto;
     }
 
-    /* .main-flex-container {
+    .main-flex-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
-    main div {
-        width: 500px;
-        flex: 50%;
-    } */
+    .mike-reaka-image2 {
+        width: 60%;
+        margin: auto;
+    }
     
     
     #header-logo-2 {

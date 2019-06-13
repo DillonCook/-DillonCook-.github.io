@@ -3,7 +3,8 @@
 
 body {
     text-align: center;
-    background-color: rgb(255, 254, 253);
+    background-color: rgb(248, 253, 255);
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/19/10/36/facade-1209311_960_720.jpg);
 }
 
          /* =======================    Header    =========================== */
@@ -28,9 +29,16 @@ nav {
 nav h4 {
     margin: 10px;
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     font-weight: normal;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 500px;
+}
+
+.call-now {
+    text-shadow: none;
 }
 
 nav ul {
@@ -43,6 +51,17 @@ nav ul {
     flex-direction: column;
 }
 
+
+.flex-container a {         /* LINES 47 - 55 control nav bar text color changes */
+    animation: color-change 3s infinite alternate;
+}
+
+@keyframes color-change {
+    0% { color: rgb(66, 252, 91); }
+    50% { color: rgb(241, 191, 98); }
+    100% { color: rgb(70, 224, 245); }
+}
+
 nav li {
     list-style-type: none;
     background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjMwOTczfQ&auto=format&fit=crop&w=715&q=80);
@@ -52,7 +71,6 @@ nav li {
     margin: 2px 0;
     border-radius: 5px;
     padding: 10px;
-
 }
 
 nav li:hover {
@@ -62,7 +80,7 @@ nav li:hover {
 
 nav a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.85);
+    
 }
 
 h4 a {
@@ -87,7 +105,7 @@ nav .current {
 main {
     width: 90%;
     margin: 50px auto 50px;
-    background-color: rgba(240, 240, 240, 0.712);
+    background-color: rgba(240, 240, 240, 0.95);
     border-radius: 9px;
     border-left: 1px solid rgba(128, 128, 128, 0.486);
     border-right: 1px solid rgba(128, 128, 128, 0.486);
@@ -278,7 +296,7 @@ p span:not(:first-child) {
         display: block;
         width: 100%;
         object-fit: contain;
-        box-shadow:  0 0 20px -1px #FCFEFF;
+        border-bottom: 2px solid rgb(53, 125, 192);
     }
 
     nav {
